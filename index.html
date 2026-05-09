@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTITUCION</title>
+    <link rel="stylesheet" href="estilospropios.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            color: rgb(86, 198, 91);
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="fondoCabeza">
+            <center>
+               
+            </center>
+        </div>
+
+        <nav id="menuPpal">
+            <center>
+            <ul>
+               
+                <li><a href="#">Contacto</a></li>
+                 
+                <li><a href="#">Imagenes</a></li> 
+                
+               <li><a href="#">Videos</a></li>
+
+               <li><a href="#">Guias</a></li>
+            </ul>
+            </center>
+        </nav>
+  
+
+<section id="servicios">
+    <h2>Servicios Académicos</h2>
+    <section id="servicios">
+
+    <div class="opcionesPortal">
+        <div class="opcion" onclick="mostrar('notas')">Notas</div>
+        <div class="opcion" onclick="mostrar('asistencia')">Asistencia</div>
+      <div class="opcion">Horario</div>
+    <div class="opcion">Informacion</div>
+    </div>
+</section>
+
+<!-- Formularios -->
+<div id="notas" style="display:none;">
+    <h3>Entrar a mirar notas</h3>
+    <form>
+        Nombre: <input type="text"><br>
+         Apellido: <input type="text"><br>
+        Documento: <input type="text"><br>
+        <button type="submit">VER</button>
+    </form>
+</div>
+
+<div id="asistencia" style="display:none;">
+    <h3>Verificar asistencia</h3>
+    <form>
+        Nombre: <input type="text"><br>
+         Apellido: <input type="text"><br>
+        Documento: <input type="text"><br>
+        <button type="submit">VER</button>
+    </form>
+</div>
+
+<script>
+function mostrar(seccion) {
+    document.getElementById("notas").style.display = "none";
+    document.getElementById("asistencia").style.display = "none";
+    document.getElementById(seccion).style.display = "block";
+}
+</script>
