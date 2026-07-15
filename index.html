@@ -10,79 +10,167 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
-    <style>
-        h1 {
-            color: rgb(86, 198, 91);
-            font-size: 40px;
-        }
-    </style>
 </head>
 
-<body>
 
-    <header>
-        <div id="fondoCabeza">
-            <center>
-               
-            </center>
-        </div>
+<header id="encabezado">
+  <div class="logo">
+    <img src="imageness/imglogo.png" alt="Logo Institución">
+  </div>
+  <div class="titulo">
+    <h1>Institución Educativa Mejía</h1>
+    <p>Formando niños y jóvenes para la convivencia, la integridad y los retos del futuro</p>
+  </div>
+  <div id="buscador">
+    <form>
+      <input type="text" placeholder="Buscar En La Institucion">
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+</header>
+
 
         <nav id="menuPpal">
             <center>
-            <ul>
-               
-                <li><a href="#">Contacto</a></li>
-                 
+            <ul> 
+                <li><a href="#">Atencion y servicios</a></li> 
                 <li><a href="#">Imagenes</a></li> 
-                
-               <li><a href="#">Videos</a></li>
-
-               <li><a href="#">Guias</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Guias</a></li>
+                 <li><a href="#">Planes de Área</a></li>
             </ul>
             </center>
         </nav>
-  
 
-<section id="servicios">
-    <h2>Servicios Académicos</h2>
-    <section id="servicios">
+        <section id="servicios">
+            <h2>Servicios Académicos</h2>
+            <div class="opcionesPortal">
+                <div class="opcion" >Notas</div>
+                <div class="opcion" >Asistencia</div>
+                <div class="opcion">Horarios</div>
+                <div class="opcion">Informacion</div>
+                <div class="opcion">Manual de convivencia</div>
 
-    <div class="opcionesPortal">
-        <div class="opcion" onclick="mostrar('notas')">Notas</div>
-        <div class="opcion" onclick="mostrar('asistencia')">Asistencia</div>
-      <div class="opcion">Horario</div>
-    <div class="opcion">Informacion</div>
+            </div>
+        </section>
+
+      
+
+        <section id="vision-mision">
+            <div class="vision">
+                <h2>Visión</h2>
+                <p>Ser una institución líder en la formación integral, promoviendo valores y conocimientos que preparen a los estudiantes para enfrentar los retos del futuro.</p>
+            </div>
+            <div class="mision">
+                <h2>Misión</h2>
+                <p>Brindar educación de calidad, inclusiva y participativa, fomentando el desarrollo académico, personal y social de cada estudiante.</p>
+            </div>
+        </section>
+      
+        <section id="noticias">
+  <h2>Noticias y Eventos</h2>
+  <div class="grid-noticias">
+
+    <div class="tarjeta-noticia">
+      <div class="imagen-noticia">🏆</div>
+      <div class="cuerpo">
+        <span class="categoria">Logros</span>
+        <h3>Estudiantes ganan concurso departamental de ciencias</h3>
+        <p>El equipo de grado 10° obtuvo el primer lugar con su proyecto sobre energías renovables.</p>
+        <div class="pie">
+          <span class="fecha">📅 20 Jun 2025</span>
+          <button class="leer">Leer más</button>
+        </div>
+      </div>
     </div>
+
+    <div class="tarjeta-noticia">
+      <div class="imagen-noticia">📅</div>
+      <div class="cuerpo">
+        <span class="categoria">Eventos</span>
+        <h3>Festival cultural de mitad de año  5 de julio</h3>
+        <p>Habrá presentaciones de danzas, teatro y exposición de arte. Entrada libre para toda la comunidad.</p>
+        <div class="pie">
+          <span class="fecha">📅 18 Jun 2025</span>
+          <button class="leer">Leer más</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tarjeta-noticia">
+      <div class="imagen-noticia">📢</div>
+      <div class="cuerpo">
+        <span class="categoria">Comunicados</span>
+        <h3>Matrícula 2026 abre el próximo 15 de julio</h3>
+        <p>Los padres de familia pueden iniciar el proceso de renovación de matrícula en la secretaría.</p>
+        <div class="pie">
+          <span class="fecha">📅 15 Jun 2025</span>
+          <button class="leer">Leer más</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="ver-todasS">
+    <button class="ver-todas">Ver todas las noticias</button>
+  </div>
 </section>
 
-<!-- Formularios -->
-<div id="notas" style="display:none;">
-    <h3>Entrar a mirar notas</h3>
-    <form>
-        Nombre: <input type="text"><br>
-         Apellido: <input type="text"><br>
-        Documento: <input type="text"><br>
-         Grado: <input type="text"><br>
+<section id="contacto-form">
+  <div class="contacto-izq">
+    <span class="contacto-badge">✉ Contacto</span>
+    <h2>Conversemos sobre el futuro de tu hijo</h2>
+    <p>¿Quieres conocer la institución, agendar una visita o resolver una duda? Escríbenos y te responderemos pronto.</p>
+    <div class="contacto-info-grid">
+      <div class="info-card">📍 <div><small>Dirección</small><strong>Calle 45 #23-10</strong></div></div>
+      <div class="info-card">📞 <div><small>Teléfono</small><strong>300 123 4567</strong></div></div>
+      <div class="info-card">✉ <div><small>Correo</small><strong>Mejia@institucion.edu.co</strong></div></div>
+      <div class="info-card">🕐 <div><small>Horario</small><strong>Lun a Vie 7:00 – 17:00</strong></div></div>
+    </div>
+  </div>
+  <div class="contacto-der">
+    <div class="form-fila">
+      <div class="form-grupo">
+        <label>Nombre</label>
+        <input type="text">
+      </div>
+      <div class="form-grupo">
+        <label>Teléfono</label>
+        <input type="text">
+      </div>
+    </div>
+    <div class="form-grupo">
+      <label>Correo</label>
+      <input type="email">
+    </div>
+    <div class="form-grupo">
+      <label>Mensaje</label>
+      <textarea rows="4"></textarea>
+    </div>
+    <button>Enviar mensaje </button>
+  </div>
+</section
 
-        <button type="submit">VER</button>
-    </form>
-</div>
+      
+        <section id="descripcion">
+         <div class="img-colegio">
+         <img src="imageness/segunda.jpeg" alt="Institución Educativa Mejía">
+            </div>
+            <div class="texto-colegio">
+                <h2>Institución Educativa </h2>
+                <p>Somos una institución comprometida con la formación integral de nuestros estudiantes, fomentando valores, conocimiento y desarrollo personal en un ambiente inclusivo y alegre.</p>
+            </div>
+        </section>
 
-<div id="asistencia" style="display:none;">
-    <h3>Verificar asistencia</h3>
-    <form>
-        Nombre: <input type="text"><br>
-         Apellido: <input type="text"><br>
-        Documento: <input type="text"><br>
-         Grado: <input type="text"><br>
-        <button type="submit">VER</button>
-    </form>
-</div>
 
-<script>
-function mostrar(seccion) {
-    document.getElementById("notas").style.display = "none";
-    document.getElementById("asistencia").style.display = "none";
-    document.getElementById(seccion).style.display = "block";
-}
-</script>
+        <footer id="contactos">
+            <h3>Contactos</h3>
+            <p>Correo: Mejia@institucion.edu.co</p>
+            <p>Teléfono: 300 123 4567</p>
+            <p>Red social: @institucion.c</p>
+        </footer>
+
+    </header>
+
+</body>
+</html>
